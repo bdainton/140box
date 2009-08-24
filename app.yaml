@@ -1,0 +1,12 @@
+application: 140box
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /javascripts
+  static_dir: javascripts
+
+- url: /
+  static_files: index.html
+  upload: index.html
