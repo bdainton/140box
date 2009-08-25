@@ -40,7 +40,7 @@ function gen_url(input) {
 
 function update_character_count(clicked) {
 	var length = clicked.val().length;
-	count = 140 - length;
+	var count = 140 - length;
 	if (count < 0) {
 	  $('#count').addClass('negative');
 	} else {
