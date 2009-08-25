@@ -6,6 +6,8 @@ api_version: 1
 handlers:
 - url: /javascripts
   static_dir: javascripts
+- url: /css
+  static_dir: css
 
 - url: /
   static_files: index.html
