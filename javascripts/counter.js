@@ -9,7 +9,7 @@ $(document).ready( function() {
   $('#save').click(function() {
     var count = $('#count').text();
     var tweet = $('#tweetbox').val();
-    $('#drafts ul').prepend("<li><a href='#'>" + tweet + "</a><span id=\"remove_tweet\" class=\"right ui-icon ui-icon-close\" title=\"Remove Tweet\"></span><a href=\""+ gen_url($('#tweetbox:input').val()) +"\" target=\"_blank\"><span id=\"perma_link\" class=\"right ui-icon ui-icon-extlink\" title=\"Permalink to this Tweet\"></span></a></li>");
+    $('#drafts ul').prepend("<li><span id=\"remove_tweet\" class=\"right ui-icon ui-icon-close\" title=\"Remove Tweet\"></span><a href=\""+ gen_url($('#tweetbox:input').val()) +"\" target=\"_blank\"><span id=\"perma_link\" class=\"right ui-icon ui-icon-extlink\" title=\"Permalink to this Tweet\"></span></a><a class=\"draft_text\" href='#'>" + tweet + "</a></li>");
     return false;
   });
   
